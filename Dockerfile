@@ -17,5 +17,3 @@ EXPOSE 8080
 
 # provide entry-point
 CMD ["/bin/bash", "./entry-point.sh"]
-
-# docker run -p 8080:8080 -p 9200:9200 еs-example
