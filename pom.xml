@@ -20,7 +20,12 @@
         <repository>
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
-            <url>http://repo.spring.io/milestone</url>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2</url>
         </repository>
     </repositories>
 
@@ -69,6 +74,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
             <optional>true</optional>
         </dependency>
         <dependency>
