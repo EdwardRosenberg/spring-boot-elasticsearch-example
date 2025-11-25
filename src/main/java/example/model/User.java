@@ -1,25 +1,34 @@
 package example.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
 @Document(indexName = "user")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class User {
 
 	@Id
 	private String id;
-	private String firstName;
-	private String lastName;
+	
 	@Field(type = FieldType.Text)
+	private String firstName;
+	
+	@Field(type = FieldType.Text)
+	private String lastName;
+	
+	@Field(type = FieldType.Keyword)
 	private UserType userType;
+
+	public User() {
+	}
+
+	public User(String id, String firstName, String lastName, UserType userType) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.userType = userType;
+	}
 
 	public User(String firstName, String lastName, UserType userType) {
 		this.firstName = firstName;
