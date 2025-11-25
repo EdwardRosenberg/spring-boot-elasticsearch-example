@@ -5,7 +5,7 @@
 # For format details, see: https://gh.io/customagents/config
 
 name: my-first-agent
-description:
+description: general purpose coding agent
 ---
 
 # My Agent
