@@ -1,13 +1,16 @@
 package example;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
+@SpringBootTest
+@Import(TestcontainersConfiguration.class)
 class ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		// Basic test to verify class loading
-		// Full context tests require a running Elasticsearch instance
+		// Context loads with Elasticsearch container
 	}
 
 }
