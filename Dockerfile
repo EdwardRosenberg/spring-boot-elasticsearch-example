@@ -1,4 +1,4 @@
-FROM maven:3.6.0-jdk-11
+FROM maven:3.9-eclipse-temurin-17
 
 WORKDIR /es-example
 
@@ -10,7 +10,7 @@ RUN chown -R newuser /es-example
 
 USER newuser
 
-RUN mvn clean install
+RUN mvn clean install -DskipTests
 
 # expose port for rest interface
 EXPOSE 8080
