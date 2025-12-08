@@ -11,6 +11,28 @@ Run
 
 ```docker run -p 8080:8080 еs-example```
 
+## Running with Docker Compose
+
+Start Elasticsearch 9 locally using Docker Compose:
+
+```bash
+docker-compose up -d
+```
+
+This will start an Elasticsearch 9 container on port 9200. The application is configured to connect to `http://localhost:9200` by default.
+
+To stop Elasticsearch:
+
+```bash
+docker-compose down
+```
+
+To stop and remove all data:
+
+```bash
+docker-compose down -v
+```
+
 ## Local Development with Testcontainers
 
 This project includes Testcontainers integration for local development and testing. Testcontainers automatically provisions an Elasticsearch instance using Docker.
