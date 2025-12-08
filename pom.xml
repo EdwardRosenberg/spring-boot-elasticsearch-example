@@ -99,15 +99,9 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
-                    </execution>
-                    <execution>
-                        <id>jacoco-report-xml</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
                         <configuration>
                             <formats>
+                                <format>HTML</format>
                                 <format>XML</format>
                             </formats>
                         </configuration>
