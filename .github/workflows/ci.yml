@@ -35,10 +35,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      with:
-        args: >
-          -Dsonar.projectKey=EdwardRosenberg_spring-boot-elasticsearch-example
-          -Dsonar.organization=edwardrosenberg
 
     - name: Upload coverage report
       uses: actions/upload-artifact@v4
