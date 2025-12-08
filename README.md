@@ -58,4 +58,4 @@ Tests use Testcontainers to spin up an Elasticsearch container:
 ### Requirements
 
 - Docker must be running on your machine
-- Java 21 or later
+- Java 25 or later
