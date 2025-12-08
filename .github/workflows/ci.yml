@@ -38,7 +38,7 @@ jobs:
         path: target/site/jacoco/
 
     - name: SonarCloud Scan
-      if: ${{ secrets.SONAR_TOKEN != '' }}
+      if: ${{ secrets.SONAR_TOKEN != null }}
       uses: SonarSource/sonarcloud-github-action@v2.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
