@@ -63,7 +63,6 @@ out/
 .factorypath
 bin/
 tmp/
-*.tmp
 *.bak
 *.swp
 *~.nib
@@ -80,7 +79,6 @@ local.properties
 # IDE - NetBeans
 nbproject/private/
 nbbuild/
-dist/
 nbdist/
 .nb-gradle/
 
@@ -129,8 +127,4 @@ logs/
 *.temp
 scratchpad/
 .mtj.tmp/
-
-# Build artifacts
-!**/src/main/**
-!**/src/test/**
 
