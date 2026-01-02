@@ -59,3 +59,33 @@ Tests use Testcontainers to spin up an Elasticsearch container:
 
 - Docker must be running on your machine
 - Java 25 or later
+
+## API Documentation with Swagger
+
+This application includes Swagger/OpenAPI specification for REST API documentation.
+
+### Accessing Swagger UI
+
+Once the application is running (via `./mvnw spring-boot:test-run` or Docker), you can access:
+
+- **Swagger UI**: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+- **OpenAPI JSON**: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+- **OpenAPI YAML**: [http://localhost:8080/v3/api-docs.yaml](http://localhost:8080/v3/api-docs.yaml)
+
+The Swagger UI provides an interactive interface to explore and test all available REST API endpoints.
+
+### Disabling Swagger for Production
+
+To disable Swagger UI in production environments, add the following to your `application.properties`:
+
+```properties
+springdoc.swagger-ui.enabled=false
+springdoc.api-docs.enabled=false
+```
+
+Or set it via environment variable:
+
+```bash
+export SPRINGDOC_SWAGGER_UI_ENABLED=false
+export SPRINGDOC_API_DOCS_ENABLED=false
+```
