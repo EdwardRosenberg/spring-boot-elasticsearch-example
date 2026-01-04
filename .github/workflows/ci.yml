@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: read
       pull-requests: read
@@ -38,7 +38,7 @@ jobs:
         path: target/site/jacoco/
 
     - name: SonarCloud Scan
-      if: ${{ secrets.SONAR_TOKEN != null }}
+      if: ${{ secrets.SONAR_TOKEN != '' }}
       uses: SonarSource/sonarcloud-github-action@v2.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
