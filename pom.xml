@@ -19,6 +19,7 @@
     <properties>
         <java.version>25</java.version>
         <testcontainers.version>2.0.2</testcontainers.version>
+        <sonar.organization>edwardrosenberg</sonar.organization>
     </properties>
 
     <dependencies>
