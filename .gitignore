@@ -1,18 +1,63 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.iml
+*.ipr
+*.iws
+.vs/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+.pnp.*
+.env
+.env.local
+.env.*.local
+.cache/
+.parcel-cache/
+.next/
+out/
+.nuxt/
+.vuepress/dist
+
 # Java
+target/
 *.class
+*.jar
 *.war
 *.ear
-*.nar
+*.zip
+*.tar.gz
+*.rar
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+bin/
+.mtj.tmp/
 hs_err_pid*
-replay_pid*
-
-# JAR files
-*.jar
-# Exception: Gradle wrapper
-!gradle/wrapper/gradle-wrapper.jar
 
 # Maven
-target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -21,109 +66,38 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
 
-# Gradle
-.gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-# Node.js / npm
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-.pnpm-debug.log*
-dist/
-built/
-etc/
-node/
-*.tgz
-.npm
-.eslintcache
-.node_repl_history
-.yarn-integrity
-
-# IDE - IntelliJ IDEA
-.idea/
-*.iml
-*.iws
-*.ipr
-out/
-.idea_modules/
-
-# IDE - Eclipse
-.classpath
-.project
-.settings/
-.metadata
-.factorypath
-bin/
-tmp/
-*.bak
-*.swp
-*~.nib
-local.properties
-.loadpath
-.recommenders
-.springBeans
-
-# IDE - Visual Studio Code
-.vscode/
-*.code-workspace
-.history/
-
-# IDE - NetBeans
-nbproject/private/
-nbbuild/
-nbdist/
-.nb-gradle/
-
-# OS - macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# OS - Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-*.stackdump
-[Dd]esktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-*.lnk
-
-# OS - Linux
-*~
-.fuse_hidden*
-.directory
-.Trash-*
-.nfs*
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+.tox/
+*.egg-info/
+*.egg
 
 # Logs
-*.log
 logs/
-*.log.*
+*.log
+lerna-debug.log*
 
 # Temporary files
 *.tmp
 *.temp
-scratchpad/
-.mtj.tmp/
+*.bak
 
+# Build artifacts
+dist/
+build/
+
+# Package manager directories
+bower_components/
+vendor/
